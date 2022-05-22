@@ -10,4 +10,27 @@ async function getDatas(){
   }
 }
 
-getDatas()
+async function render(){
+  const data = await getDatas()
+  document.querySelector('#root').innerHTML = Template(data)
+}
+render()
+
+function Template({message, time, random}){
+    return `
+         <table border = "1">
+         <tr>
+            <td>Server message</td>
+            <td>${message}</td>
+         </tr>
+         <tr>
+            <td>Server time</td>
+            <td>${time}</td>
+         </tr>
+         <tr>
+            <td>Server random</td>
+            <td>${random}</td>
+         </tr>
+      </table>
+    `
+}
