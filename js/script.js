@@ -38,6 +38,6 @@ function Template({message, time, random}){
 
 function ErrorTemplate(){
   return `
-    The server are sleeping! <a href="${endpoint} tagget="_blank">Wake it up!</a>
+    The server are sleeping! <a href="${endpoint} taget="_blank">Wake it up!</a>
   `
 }
