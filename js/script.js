@@ -38,7 +38,7 @@ function Template({message, time, random}){
 
 function ErrorTemplate(){
   return `
-    The server are sleeping! <a onClick="reloader()" href="${endpoint} target="_blank">Wake it up!</a>
+    The server are sleeping! <a onClick="reloader()" href="${endpoint}" target="_blank">Wake it up!</a>
   `
 }
 
