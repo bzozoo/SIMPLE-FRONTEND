@@ -43,5 +43,6 @@ function ErrorTemplate(){
 }
 
 function reloader(){
+   console.log('Reloaded after some seconds')
     setTimeout(()=>{location.reload();}, 10000)
 }
