@@ -38,6 +38,10 @@ function Template({message, time, random}){
 
 function ErrorTemplate(){
   return `
-    The server are sleeping! <a href="${endpoint} taget="_blank">Wake it up!</a>
+    The server are sleeping! <a onClick="reloader()" href="${endpoint} taget="_blank">Wake it up!</a>
   `
+}
+
+function reloader(){
+    setTimeout(()=>{location.reload();}, 10000)
 }
