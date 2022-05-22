@@ -12,7 +12,7 @@ async function getDatas(){
 
 async function render(){
   const data = await getDatas()
-  document.querySelector('#root').innerHTML = Template(data)
+  document.querySelector('#app').innerHTML = Template(data)
 }
 render()
 
