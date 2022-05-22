@@ -3,5 +3,5 @@
 - CODE https://codesandbox.io/s/simple-backend-zrivv1?file=/index.js
 
 ### FRONTEND SITE
-- https://bzozoo.github.io/SIMPLE-FRONTEND/index.html
-- https://bzozoo.github.io/SIMPLE-FRONTEND/js/script.js
+- DEMO https://bzozoo.github.io/SIMPLE-FRONTEND/index.html
+- JS CODE https://bzozoo.github.io/SIMPLE-FRONTEND/js/script.js
