@@ -11,9 +11,13 @@ async function getDatas(){
 }
 
 async function render(){
-  const data = await getDatas()
-  console.log(data)
-  document.querySelector('#app').innerHTML = Template(data)
+  try{
+    const data = await getDatas();
+    console.log(data);
+    document.querySelector('#app').innerHTML = Template(data);
+  }catch(e){
+    document.querySelector('#app').innerHTML = ErrorTemplate();
+  }
 }
 render()
 
@@ -34,4 +38,10 @@ function Template({message, time, random}){
          </tr>
       </table>
     `
+}
+
+function ErrorTemplate(){
+  return `
+    The server are sleeping! <a href="${endpoint} tagget="_blank">Wake it up!</a>
+  `
 }
