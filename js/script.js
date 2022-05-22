@@ -1,4 +1,4 @@
-const endpoint = "https://zrivv1.sse.codesandbox.ioBUG/"
+const endpoint = "https://zrivv1.sse.codesandbox.io/"
 
 async function getDatas(){
   try {
